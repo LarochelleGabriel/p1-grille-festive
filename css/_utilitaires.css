@@ -1,0 +1,17 @@
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+/*** Appliquer la classe clearfix sur un élément dont toutes les balises enfants
+     ont une propriété float ***/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
